@@ -1,0 +1,12 @@
+Index	Instruction
+0	LDA (P,1) 
+1	ADD (P,2) 
+2	MEND
+3	STA (P,3) 
+4	SUB K3 
+5	MEND
+6	LDA (P,4) 
+7	ADD (P,5) 
+8	SUB (E,1)
+9	BR (SS,1)
+10	MEND

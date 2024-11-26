@@ -1,0 +1,22 @@
+- START 200         // Initialize LC to 200
+INIT    MOV AREG, X  // LC = 200
+LOOP1   ADD BREG, Y  // LC = 201
+        SUB CREG, Z  // LC = 202
+        MUL DREG, W  // LC = 203
+LOOP2   MOV AREG, M  // LC = 204
+        DIV BREG, N  // LC = 205
+        DC 10        // LC = 206 (Reserves 1 location for a constant)
+DATA1   DS 3         // LC = 207 (Reserves 3 locations: 207, 208, 209)
+        ADD AREG, DATA1  // LC = 210
+RESULT  MOV CREG, RESULT // LC = 211
+-       DS 2         // LC = 212 (Reserves 2 locations: 212, 213)
+        MOV AREG, Q  // LC = 214
+ERROR   JMP LOOP1    // LC = 215
+X       DC 4         // LC = 216 (Reserves 1 location for a constant)
+Y       DC 6         // LC = 217
+Z       DC 3         // LC = 218
+W       DC 2         // LC = 219
+M       DC 8         // LC = 220
+N       DC 9         // LC = 221
+Q       DC 7         // LC = 222
+-       END -        // No LC update
