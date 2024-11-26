@@ -1,0 +1,24 @@
+Symbol Table:
+0    TWO    101
+1    NUM    104
+
+Literal Table:
+0    ='5'    103
+1    ='4'    107
+
+Pool Table:
+0    0
+1    1
+2    2
+
+Intermediate Code with LC (Variant I form):
+100   (AD, 1)   (C, 100)
+100   (IS, 4)   (AREG, 1)   (L, 0)
+102   (IS, 1)   (BREG, 2)   (S, 0)
+105   (IS, 5)   (CREG, 3)   (S, 1)
+106   (IS, 5)   (DREG, 4)   (L, 1)
+108   (AD, 2)   
+
+Error Count: 2
+Error: Invalid instruction =EQU
+Error: Invalid instruction =TEMP
