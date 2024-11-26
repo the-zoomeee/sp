@@ -1,0 +1,8 @@
+MACRO INIT
+    LOAD A, B
+    ADD C, D
+END
+
+MACRO ADDNUM
+    ADD X, Y
+END

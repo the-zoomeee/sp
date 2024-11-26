@@ -1,0 +1,22 @@
+- START 200
+INIT    MOV AREG, X
+LOOP1   ADD BREG, Y
+        SUB CREG, Z
+        MUL DREG, W
+LOOP2   MOV AREG, M
+        DIV BREG, N
+        DC 10
+DATA1   DS 3
+        ADD AREG, DATA1
+RESULT  MOV CREG, RESULT
+-       DS 2
+        MOV AREG, Q
+ERROR   JMP LOOP1
+X       DC 4
+Y       DC 6
+Z       DC 3
+W       DC 2
+M       DC 8
+N       DC 9
+Q       DC 7
+-       END -
